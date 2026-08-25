@@ -1,7 +1,10 @@
 # 🎙️ Fidias Test — Multi-Language Dubs
 
 Voice-cloned dubs (Zero-shot voice cloning via **OmniVoice** & **MOSS TTS**) for two source videos.
-Click any poster to play the video.
+
+## ▶️ Live players
+
+Open the [player page](https://rumbis.github.io/fidias-test/) to watch all videos inline.
 
 ## 📺 1. Podcast clip (6:50–8:00) — 2 voices (Fidias + guest)
 
