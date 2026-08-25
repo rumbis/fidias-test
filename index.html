@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fidias Test — Multi-Language Dubs</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: linear-gradient(135deg,#0f0c29,#302b63,#24243e); color:#fff; min-height:100vh; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  h2 { font-size: 1.3rem; margin: 44px 0 14px; border-bottom:1px solid rgba(255,255,255,.15); padding-bottom:8px; }
+  p.sub { opacity:.8; margin: 0 0 24px; }
+  .tag { font-size:.85rem; background: rgba(255,255,255,.12); padding:2px 8px; border-radius:20px; margin-left:6px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:18px; }
+  .card { background: rgba(255,255,255,.06); border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.1); }
+  .card video { width:100%; display:block; aspect-ratio:9/16; background:#000; }
+  .card.clip video { aspect-ratio:16/9; }
+  .card .label { padding:10px 12px; font-size:.9rem; }
+  .card .label small { display:block; opacity:.7; font-size:.78rem; margin-top:2px; }
+  .note { opacity:.65; font-size:.85rem; margin-top:28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎙️ Fidias Test — Multi-Language Dubs</h1>
+  <p class="sub">Voice-cloned dubs (OmniVoice &amp; MOSS TTS) for two source videos.</p>
+
+  <h2>📺 Podcast clip (6:50–8:00) — 2 voices (Fidias + guest)</h2>
+  <div class="grid">
+    <div class="card clip">
+      <video controls preload="metadata" src="podcast_es_omnivoice.mp4"></video>
+      <div class="label">🇪🇸 Español <small>OmniVoice</small></div>
+    </div>
+    <div class="card clip">
+      <video controls preload="metadata" src="podcast_ru_omnivoice.mp4"></video>
+      <div class="label">🇷🇺 Русский <small>OmniVoice</small></div>
+    </div>
+    <div class="card clip">
+      <video controls preload="metadata" src="podcast_es_moss.mp4"></video>
+      <div class="label">🇪🇸 Español <small>MOSS TTS</small></div>
+    </div>
+    <div class="card clip">
+      <video controls preload="metadata" src="podcast_ru_moss.mp4"></video>
+      <div class="label">🇷🇺 Русский <small>MOSS TTS</small></div>
+    </div>
+  </div>
+
+  <h2>📺 Greek short — Fidias voice, 7 languages</h2>
+  <div class="grid">
+    <div class="card"><video controls preload="metadata" src="fidias_gr_en.mp4"></video><div class="label">🇬🇧 English</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_fr.mp4"></video><div class="label">🇫🇷 Français</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_it.mp4"></video><div class="label">🇮🇹 Italiano</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_es.mp4"></video><div class="label">🇪🇸 Español</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_de.mp4"></video><div class="label">🇩🇪 Deutsch</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_ja.mp4"></video><div class="label">🇯🇵 日本語</div></div>
+    <div class="card"><video controls preload="metadata" src="fidias_gr_zh.mp4"></video><div class="label">🇨🇳 中文</div></div>
+  </div>
+
+  <p class="note">Voice reference: <code>fidias_voice_ref_best.wav</code> — clean Greek (Cypriot) Fidias sample.</p>
+</div>
+</body>
+</html>
